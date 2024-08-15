@@ -1,9 +1,9 @@
-"use client"
-import React, { useState } from 'react'
-import { MdAddCircleOutline, MdRemoveCircleOutline } from 'react-icons/md';
+"use client";
+import React, { useState } from "react";
+import { MdAddCircleOutline, MdRemoveCircleOutline } from "react-icons/md";
 
 const AddDirectors = () => {
-    const [dropdowns, setDropdowns] = useState([0]);
+  const [dropdowns, setDropdowns] = useState([0]);
 
   const handleAddDropdown = () => {
     setDropdowns([...dropdowns, dropdowns.length]);
@@ -24,7 +24,7 @@ const AddDirectors = () => {
           className="w-[12%] flex justify-evenly items-center border-[1px] py-1 rounded-lg border-formbordercolor hover:bg-buttonhover hover:text-formbackgroundcolor hover:border-0 transition-all ease-in duration-200"
         >
           <MdAddCircleOutline size={15} />
-          <span className='text-sm'>Add Director</span>
+          <span className="text-sm">Add Director</span>
         </div>
       </div>
       <div className="flex flex-col justify-between items-center px-3 py-3 max-h-[300px] overflow-y-auto">
@@ -63,9 +63,9 @@ const AddDirectors = () => {
               type="Date"
               placeholder="Date"
             />
-            <div className=' text-sm text-gray-500  w-[8%] h-[35px] px-2 flex justify-around items-center'>
-            <input type="checkbox" name="" id="" />
-            <span>Is Active</span>
+            <div className=" text-sm text-gray-500  w-[8%] h-[35px] px-2 flex justify-around items-center">
+              <input type="checkbox" name="" id="" />
+              <span>Is Active</span>
             </div>
             <div
               onClick={() =>
@@ -81,11 +81,10 @@ const AddDirectors = () => {
               {/* <span>Delete</span> */}
             </div>
           </div>
-          
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AddDirectors
+export default AddDirectors;

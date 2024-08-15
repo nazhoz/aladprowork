@@ -3,7 +3,6 @@ import React from "react";
 import { TiUserAdd } from "react-icons/ti";
 
 const JobForms = () => {
-
   const jobCategory = [
     { id: 1, name: "LLP Form No.8" },
     { id: 2, name: "Account Prepration for Management" },
@@ -30,7 +29,6 @@ const JobForms = () => {
     { id: 2, name: "Approved" },
   ];
 
-
   return (
     <div className="grid grid-cols-3 px-4 py-4">
       {/*=============== Job Category =================*/}
@@ -43,7 +41,7 @@ const JobForms = () => {
           name=""
           id=""
         >
-          <option className="text-xs" value="" disabled>
+          <option className="text-xs text-inputs" value="">
             --Select Job Category--
           </option>
           {jobCategory.map((category) => (
@@ -67,7 +65,7 @@ const JobForms = () => {
           name=""
           id=""
         >
-          <option className="text-xs" value="" disabled>
+          <option className="text-xs text-inputs" value="">
             --Select Job Process--
           </option>
           {jobCategory.map((category) => (
@@ -91,7 +89,7 @@ const JobForms = () => {
           name=""
           id=""
         >
-          <option className="text-xs" value="" disabled>
+          <option className="text-xs text-inputs" value="">
             --Select Financial Year--
           </option>
           {financialYear.map((category) => (
@@ -111,10 +109,11 @@ const JobForms = () => {
           <span>
             Client Info <span className="text-red-600">*</span>
           </span>
-          <Link href="/addclient"
+          <Link
+            href="/createjob/addclient"
             className=" cursor-pointer text-links text-xs flex justify-around items-center"
           >
-           Add <TiUserAdd size={20}/> 
+            Add <TiUserAdd size={20} />
           </Link>
           {/* <TiUserAdd size={20} onClick={handleAddClient} className=" cursor-pointer text-links text-xs" /> */}
         </div>
@@ -135,7 +134,7 @@ const JobForms = () => {
           name=""
           id=""
         >
-          <option className="text-xs" value="" disabled>
+          <option className="text-xs text-inputs" value="">
             --Select Priority--
           </option>
           {priority.map((category) => (
@@ -162,7 +161,7 @@ const JobForms = () => {
           name=""
           id=""
         >
-          <option className="text-xs" value="" disabled>
+          <option className="text-xs text-inputs" value="">
             --Select Status--
           </option>
           {status.map((category) => (

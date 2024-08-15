@@ -38,7 +38,9 @@ const AssignedStaff = () => {
       </div>
 
       {/*====================== Assigned staff dropdown container ===================== */}
-      <div className="max-h-[200px] overflow-y-auto">  {/* Fixed height and overflow for scrolling */}
+      <div className="max-h-[200px] overflow-y-auto">
+        {" "}
+        {/* Fixed height and overflow for scrolling */}
         {dropdowns.map((_, index) => (
           <div
             key={index}
@@ -64,7 +66,9 @@ const AssignedStaff = () => {
               ))}
             </select>
             <div
-              onClick={() => dropdowns.length > 1 && handleRemoveDropdown(index)}
+              onClick={() =>
+                dropdowns.length > 1 && handleRemoveDropdown(index)
+              }
               className={`w-[12%] flex justify-evenly items-center border-[1px] py-2 text-sm font-bold rounded-lg border-formbordercolor ${
                 dropdowns.length > 1
                   ? "hover:bg-deletecolor hover:text-formbackgroundcolor hover:border-0 cursor-pointer transition-all ease-in duration-200"

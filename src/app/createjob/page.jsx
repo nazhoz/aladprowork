@@ -1,10 +1,10 @@
 import React from "react";
-
+import CreateJob from "../../pages/CreateJob";
 
 const page = () => {
   return (
     <div>
-      Dashboard
+      <CreateJob />
     </div>
   );
 };

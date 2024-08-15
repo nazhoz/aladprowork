@@ -62,7 +62,6 @@ const AddDocument = () => {
               <span>Delete</span>
             </div>
           </div>
-          
         ))}
       </div>
     </div>

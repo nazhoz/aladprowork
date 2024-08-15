@@ -25,16 +25,24 @@ const JobCategory = () => {
       <div className="w-[100%] rounded-md border-[1px] border-b-formbordercolor px-3 flex justify-between items-center h-[50px] text-sm font-bold">
         <div className="w-[15%] flex justify-start items-center gap-4 px-1">
           <input type="checkbox" />
-          <span className="font-bold text-sm text-inputbordercolor">Job Category</span>
+          <span className="font-bold text-sm text-inputbordercolor">
+            Job Category
+          </span>
         </div>
         <div className="w-[15%] flex justify-start items-center gap-4 px-7 ">
-          <span className="font-bold text-sm text-inputbordercolor">Job Process</span>
+          <span className="font-bold text-sm text-inputbordercolor">
+            Job Process
+          </span>
         </div>
         <div className="w-[15%] flex justify-start items-center gap-4 px-4">
-          <span className="font-bold text-sm text-inputbordercolor">Assigned Staff</span>
+          <span className="font-bold text-sm text-inputbordercolor">
+            Assigned Staff
+          </span>
         </div>
         <div className="w-[15%] flex justify-start items-center gap-4 px-2">
-          <span className="font-bold text-sm text-inputbordercolor">Tagged Manager</span>
+          <span className="font-bold text-sm text-inputbordercolor">
+            Tagged Manager
+          </span>
         </div>
         <div
           onClick={handleAddDropdown}

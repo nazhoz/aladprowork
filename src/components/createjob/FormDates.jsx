@@ -51,7 +51,7 @@ const FormDates = () => {
           name=""
           id=""
         >
-          <option className="text-xs" value="" disabled>
+          <option className="text-xs text-inputs" value="">
             --Select Manager--
           </option>
           {Manager.map((category) => (
@@ -74,7 +74,7 @@ const FormDates = () => {
           name=""
           id=""
         >
-          <option className="text-xs" value="" disabled>
+          <option className="text-xs text-inputs" value="">
             --Select Partner--
           </option>
           {partner.map((category) => (

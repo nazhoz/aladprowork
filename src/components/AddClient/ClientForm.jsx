@@ -24,12 +24,12 @@ const ClientForm = () => {
     { id: 4, name: "MUHAMMED RASHID" },
   ];
 
-  const partner =[
+  const partner = [
     { id: 1, name: "MOHAMMED ALI" },
     { id: 2, name: "ABDU RAHIM" },
     { id: 3, name: "MANIKANDAN MAMBATTA" },
     { id: 4, name: "MUHAMMED RASHID" },
-  ]
+  ];
   return (
     <div className="grid grid-cols-3 w-[100%] py-2 px-2">
       {/*======================= Client name ================================*/}
@@ -288,7 +288,11 @@ const ClientForm = () => {
           </span>
         </div>
         <div className="flex px-1 w-[95%] border-[1px] border-inputs outline-none rounded-md focus:border-inputbordercolor ">
-          <select className="w-[12%] h-[35px] outline-none border-r-[1px] text-xs bg-none" name="" id="">
+          <select
+            className="w-[12%] h-[35px] outline-none border-r-[1px] text-xs bg-none"
+            name=""
+            id=""
+          >
             {countryCodes.map((codes) => (
               <option key={codes.id} value={codes.code}>
                 {codes.name} ({codes.code})
@@ -307,9 +311,7 @@ const ClientForm = () => {
       {/*=============================== Account Type ===================================*/}
       <div className="flex flex-col px-2 py-2 gap-3">
         <div className="text-[15px] font-semibold flex justify-between items-center w-[95%]">
-          <span>
-            Account Type 
-          </span>
+          <span>Account Type</span>
         </div>
         <div className="flex justify-start items-center gap-10 px-1">
           <div className="flex font-semibold text-sm gap-3">
@@ -337,9 +339,7 @@ const ClientForm = () => {
       {/*=============================== Status ===================================*/}
       <div className="flex flex-col px-2 py-2 gap-3">
         <div className="text-[15px] font-semibold flex justify-between items-center w-[95%]">
-          <span>
-            Status 
-          </span>
+          <span>Status</span>
         </div>
         <label className="inline-flex items-center gap-3 cursor-pointer text-sm font-medium">
           <input type="checkbox" value="" className="sr-only peer" />
@@ -349,9 +349,7 @@ const ClientForm = () => {
       </div>
       {/*=============================== Assigned Staff ===================================*/}
       <div className="flex flex-col px-2 py-2 gap-2 ">
-        <span className="text-[15px] font-semibold">
-        Assigned Staff
-        </span>
+        <span className="text-[15px] font-semibold">Assigned Staff</span>
         <select
           className="w-[95%] h-[35px] border-[1px] border-inputs outline-none rounded-md focus:border-inputbordercolor text-xs font-medium px-1 "
           name=""
@@ -370,9 +368,7 @@ const ClientForm = () => {
       </div>
       {/*=============================== Tagged Manager ===================================*/}
       <div className="flex flex-col px-2 py-2 gap-2 ">
-        <span className="text-[15px] font-semibold">
-        Tagged Manager
-        </span>
+        <span className="text-[15px] font-semibold">Tagged Manager</span>
         <select
           className="w-[95%] h-[35px] border-[1px] border-inputs outline-none rounded-md focus:border-inputbordercolor text-xs font-medium px-1 "
           name=""
@@ -391,9 +387,7 @@ const ClientForm = () => {
       </div>
       {/*=============================== Tagged Partner ===================================*/}
       <div className="flex flex-col px-2 py-2 gap-2 ">
-        <span className="text-[15px] font-semibold">
-        Tagged Partner 
-        </span>
+        <span className="text-[15px] font-semibold">Tagged Partner</span>
         <select
           className="w-[95%] h-[35px] border-[1px] border-inputs outline-none rounded-md focus:border-inputbordercolor text-xs font-medium px-1 "
           name=""

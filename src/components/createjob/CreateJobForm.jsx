@@ -1,11 +1,18 @@
-"use client"
+"use client";
 import React from "react";
 import JobForms from "./JobForms";
 import TaskForms from "./TaskForms";
 import AssignedStaff from "./AssignedStaff";
+import { Toaster, toast } from "sonner";
 
 const CreateJobForm = () => {
-  
+  const createToast = () => {
+    toast.success("Job Created Successfully!");
+  };
+
+  const cancelToast = () => {
+    toast.error("Job Creation Cancelled");
+  };
   return (
     <div className="flex justify-start items-start flex-col px-3 py-3 w-[70%]">
       <div className="border-[1px] w-[100%] border-formbordercolor rounded-lg bg-formbackgroundcolor shadow-md">
@@ -28,13 +35,20 @@ const CreateJobForm = () => {
         </div>
       </div>
       <div className="py-4 px-4 flex justify-between bg-formbackgroundcolor border-[1px] shadow-md rounded-lg mt-2 mb-2 w-[100%]">
-        <button className="w-[15%] text-[15px] font-bold  flex justify-evenly items-center border-[1px] py-2 rounded-lg border-blackborder hover:bg-buttonhover hover:text-formbackgroundcolor hover:border-0 transition-all ease-in duration-200 ">
+        <button
+          onClick={createToast}
+          className="w-[15%] text-[15px] font-bold  flex justify-evenly items-center border-[1px] py-2 rounded-lg border-blackborder hover:bg-buttonhover hover:text-formbackgroundcolor hover:border-0 transition-all ease-in duration-200 "
+        >
           Create
         </button>
-        <button className="w-[15%] text-[15px] font-bold flex justify-evenly items-center border-[1px] py-2 rounded-lg border-blackborder hover:bg-deletecolor hover:text-formbackgroundcolor hover:border-0 transition-all ease-in duration-200 ">
+        <button
+          onClick={cancelToast}
+          className="w-[15%] text-[15px] font-bold flex justify-evenly items-center border-[1px] py-2 rounded-lg border-blackborder hover:bg-deletecolor hover:text-formbackgroundcolor hover:border-0 transition-all ease-in duration-200 "
+        >
           Cancel
         </button>
       </div>
+      <Toaster richColors position="top-right" />
     </div>
   );
 };
