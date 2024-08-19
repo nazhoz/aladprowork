@@ -24,9 +24,9 @@ const AssignedStaff = () => {
   return (
     <div className="w-[100%]">
       <div className="w-[100%] border-b-[1px] border-t-[1px] border-b-formbordercolor px-3 flex justify-between items-center h-[50px] text-sm font-bold">
-        <div className="w-[15%] flex justify-evenly items-center">
+        <div className="w-[15%] flex justify-between items-center px-1">
           <input type="checkbox" />
-          <span>Assigned Staff</span>
+          <span className="text-sm">Assigned Staff</span>
         </div>
         <div
           onClick={handleAddDropdown}

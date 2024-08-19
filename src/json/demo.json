@@ -1,0 +1,58 @@
+{
+  "id": 1,
+  "MainHead": "heading 1",
+  "Status": {
+    "Pending_Status": true,
+    "Due_Date_Status": false
+  },
+  "pending_status_Heading": {
+    "workName": "Work Name",
+    "subWorkName": "Sub Work Name",
+    "jobPeriod": "Job Period",
+    "clientName": "Client Name",
+    "assignedStaff": "Assigned Staff",
+    "taggedManager": "Tagged Manager"
+  },
+  "pending_status_body": [
+    {
+      "workName": "Design Website",
+      "subWorkName": "UI/UX Design",
+      "jobPeriod": "2024-08-01 to 2024-08-15",
+      "clientName": "Acme Corp",
+      "assignedStaff": "John Doe",
+      "taggedManager": "Jane Smith"
+    },
+    {
+      "workName": "Develop Backend",
+      "subWorkName": "API Development",
+      "jobPeriod": "2024-08-16 to 2024-09-01",
+      "clientName": "Beta Inc",
+      "assignedStaff": "Alice Brown",
+      "taggedManager": "Bob Johnson"
+    }
+  ],
+  "due_date_status_Heading": {
+    "workName": "Work Name",
+    "subWorkName": "Sub Work Name",
+    "jobPeriod": "Job Period"
+  },
+  "due_date_status_body": [
+    {
+      "workName": "Design Website",
+      "subWorkName": "UI/UX Design",
+      "jobPeriod": "2024-08-01 to 2024-08-15",
+      "clientName": "Acme Corp",
+      "assignedStaff": "John Doe",
+      "taggedManager": "Jane Smith"
+    },
+    {
+      "workName": "Develop Backend",
+      "subWorkName": "API Development",
+      "jobPeriod": "2024-08-16 to 2024-09-01",
+      "clientName": "Beta Inc",
+      "assignedStaff": "Alice Brown",
+      "taggedManager": "Bob Johnson"
+    }
+  ],
+  "pathname": "/leaves/leaveforms"
+}

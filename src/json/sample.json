@@ -1,0 +1,60 @@
+{
+  "id": 3,
+  "MainHead": "heading 3",
+  "leave_Heading": {
+    "LeaveType": "Leave Type",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "totalDays": "Total Days",
+    "status": "Status",
+    "reason": "Reason",
+    "remarks": "Remarks",
+    "actions": "Actions"
+  },
+  "leave_body": [
+    {
+      "Leave Type": "Design Website - UI/UX Design",
+      "From Date": "2024-08-01",
+      "To Date": "2024-08-15",
+      "Total Days": "15",
+      "Status": "Assigned to John Doe",
+      "Reason": "Project for Acme Corp",
+      "Remarks": "Managed by Jane Smith",
+      "Actions": ""
+    },
+    {
+      "Leave Type": "Develop Backend - API Development",
+      "From Date": "2024-08-16",
+      "To Date": "2024-09-01",
+      "Total Days": "17",
+      "Status": "Assigned to Alice Brown",
+      "Reason": "Project for Beta Inc",
+      "Remarks": "Managed by Bob Johnson",
+      "Actions": ""
+    }
+  ],
+  "due_date_status_Heading": {
+    "workName": "Work Name",
+    "subWorkName": "Sub Work Name",
+    "jobPeriod": "Job Period"
+  },
+  "due_date_status_body": [
+    {
+      "workName": "Design Website",
+      "subWorkName": "UI/UX Design",
+      "jobPeriod": "2024-08-01 to 2024-08-15",
+      "clientName": "Acme Corp",
+      "assignedStaff": "John Doe",
+      "taggedManager": "Jane Smith"
+    },
+    {
+      "workName": "Develop Backend",
+      "subWorkName": "API Development",
+      "jobPeriod": "2024-08-16 to 2024-09-01",
+      "clientName": "Beta Inc",
+      "assignedStaff": "Alice Brown",
+      "taggedManager": "Bob Johnson"
+    }
+  ],
+  "pathname": "/leaves/leaveforms"
+}
