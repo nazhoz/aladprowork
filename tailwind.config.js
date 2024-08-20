@@ -51,7 +51,7 @@ module.exports = {
         'leavebgborder':'#3849E6',
         'totalleaves':'#ECF8F2',
         'leavestaken':'#E9F6FC',
-        'remainleaves':'#F6ECFD',
+        'remainleaves':'#FFE5DD',
       }
     },
   },

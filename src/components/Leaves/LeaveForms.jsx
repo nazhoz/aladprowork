@@ -2,6 +2,12 @@
 import React, { useState } from "react";
 
 const LeaveForms = () => {
+  const LeaveType = [
+    { id: 1, name: "Casual Leave", totalLeaves: 10, takenLeaves: 2 },
+    { id: 2, name: "Sick Leave", totalLeaves: 5, takenLeaves: 1 },
+    { id: 3, name: "Annual Leave", totalLeaves: 15, takenLeaves: 3 },
+  ];
+
   const [selectedDayType, setSelectedDayType] = useState("");
 
   const handleDayTypeChange = (event) => {
@@ -12,9 +18,28 @@ const LeaveForms = () => {
 
   return (
     <>
-      <div className="px-3 py-5 flex justify-between">
-        <div className="bg-formbackgroundcolor shadow-md border-[1px] rounded-md w-[75%]">
-          <div className="w-[100%] border-b-[1px] border-b-formbordercolor px-4 py-4 flex justify-between items-center  text-md font-bold text-inputbordercolor">
+      <div className="px-3 py-5 flex flex-col justify-between">
+      <div className="bg-formbackgroundcolor shadow-md border-[1px] rounded-md w-[100%] mb-3">
+          <div className="w-[100%] border-b-[1px] border-b-formbordercolor px-4 py-1 flex justify-between items-center  text-md font-bold text-inputbordercolor">
+            <span>Available Leaves</span>
+          </div>
+          <div className="flex  justify-around px-4 items-center py-3">
+            <div className="bg-totalleaves w-[20%] h-[25%] flex justify-evenly items-center rounded-md border-[1px] border-totalleaves shadow-md">
+              <span className="text-[40px] font-bold">2</span>
+              <span className="text-lg font-semibold">Total Leaves</span>
+            </div>
+            <div className="bg-leavestaken w-[20%] h-[25%] gap-2 flex justify-evenly items-center rounded-md border-[1px] border-leavestaken shadow-md">
+              <span className="text-[40px] font-bold">0</span>
+              <span className="text-lg font-semibold">Leave Taken</span>
+            </div>
+            <div className="bg-remainleaves w-[20%] h-[25%] gap-2 flex justify-evenly items-center rounded-md border-[1px] border-remainleaves shadow-md">
+              <span className="text-[40px] font-bold">2</span>
+              <span className="text-lg font-semibold">Remain Leave</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-formbackgroundcolor shadow-md border-[1px] rounded-md w-[100%]">
+          <div className="w-[100%] border-b-[1px] border-b-formbordercolor px-4 py-3 flex justify-between items-center  text-md font-bold text-inputbordercolor">
             <span>Request Leave</span>
           </div>
           <div className="grid grid-cols-2 px-4 py-6 gap-7">
@@ -127,27 +152,7 @@ const LeaveForms = () => {
             </div>
           </div>
         </div>
-        <div className="bg-formbackgroundcolor shadow-md border-[1px] rounded-md w-[24%]">
-          <div className="w-[100%] border-b-[1px] border-b-formbordercolor px-4 py-4 flex justify-between items-center  text-md font-bold text-inputbordercolor">
-            <span>Available Leaves</span>
-          </div>
-          <div className="flex flex-col justify-around px-4 items-center h-[45vh]">
-            <div className="bg-totalleaves w-[80%] h-[25%] flex justify-evenly items-center rounded-md">
-              <span className="text-[40px] font-bold">2</span>
-              <span className="text-lg font-semibold">Total Leaves</span>
-            </div>
-            <div className="bg-leavestaken w-[80%] h-[25%] gap-2 flex justify-evenly items-center rounded-md">
-              <span className="text-[40px] font-bold">0</span>
-              <span className="text-lg font-semibold">Leave Taken</span>
-            </div>
-            <div className="bg-remainleaves w-[80%] h-[25%] gap-2 flex justify-evenly items-center rounded-md">
-              <span className="text-[40px] font-bold">2</span>
-              <span className="text-lg font-semibold">Remain Leave</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="py-4 px-4 flex justify-between bg-formbackgroundcolor border-[1px] shadow-md rounded-lg mt-2 mb-2 ml-3 w-[98%]">
+        <div className="py-4 px-4 flex justify-between bg-formbackgroundcolor border-[1px] shadow-md rounded-lg mt-2   w-[100%]">
         <button
           // onClick={createToast}
           className="w-[15%] text-[15px] font-bold  flex justify-evenly items-center border-[1px] py-2 rounded-lg border-blackborder hover:bg-buttonhover hover:text-formbackgroundcolor hover:border-0 transition-all ease-in duration-200 "
@@ -161,6 +166,8 @@ const LeaveForms = () => {
           Cancel
         </button>
       </div>
+      </div>
+      
     </>
   );
 };
