@@ -13,24 +13,114 @@
   },
   "leave_body": [
     {
-      "Leave Type": "Design Website - UI/UX Design",
-      "From Date": "2024-08-01",
-      "To Date": "2024-08-15",
-      "Total Days": "15",
-      "Status": "Assigned to John Doe",
-      "Reason": "Project for Acme Corp",
-      "Remarks": "Managed by Jane Smith",
-      "Actions": ""
+      "LeaveType": "Design Website - UI/UX Design",
+      "fromDate": "2024-08-01",
+      "toDate": "2024-08-15",
+      "totalDays": "15",
+      "status": "Assigned to John Doe",
+      "reason": "Project for Acme Corp",
+      "remarks": "Managed by Jane Smith",
+      "actions": ""
     },
     {
-      "Leave Type": "Develop Backend - API Development",
-      "From Date": "2024-08-16",
-      "To Date": "2024-09-01",
-      "Total Days": "17",
-      "Status": "Assigned to Alice Brown",
-      "Reason": "Project for Beta Inc",
-      "Remarks": "Managed by Bob Johnson",
-      "Actions": ""
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
+    },
+    {
+      "LeaveType": "Develop Backend - API Development",
+      "fromDate": "2024-08-16",
+      "toDate": "2024-09-01",
+      "totalDays": "17",
+      "status": "Assigned to Alice Brown",
+      "reason": "Project for Beta Inc",
+      "remarks": "Managed by Bob Johnson",
+      "actions": ""
     }
   ],
   "due_date_status_Heading": {
